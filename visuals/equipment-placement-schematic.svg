@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#edf4f7"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9f4ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#82d6f4" stop-opacity="0.75"/>
+    </linearGradient>
+    <pattern id="sand" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#e8c487"/>
+      <circle cx="3" cy="3" r="1.4" fill="#b68949"/><circle cx="9" cy="7" r="1.2" fill="#c99f62"/>
+    </pattern>
+    <pattern id="limestone" width="20" height="18" patternUnits="userSpaceOnUse">
+      <rect width="20" height="18" fill="#e8e1cf"/>
+      <circle cx="5" cy="6" r="4" fill="#c9bfa4"/><circle cx="15" cy="12" r="5" fill="#d7cfb8"/>
+    </pattern>
+    <pattern id="zeolite" width="15" height="15" patternUnits="userSpaceOnUse">
+      <rect width="15" height="15" fill="#b8c9b2"/>
+      <path d="M2 7L7 2l6 5-4 6H3Z" fill="#819b7b"/>
+    </pattern>
+    <pattern id="alumina" width="13" height="13" patternUnits="userSpaceOnUse">
+      <rect width="13" height="13" fill="#f0e9d2"/>
+      <circle cx="4" cy="4" r="2.2" fill="#d1c39d"/><circle cx="10" cy="9" r="2.4" fill="#c9b98e"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#15384a" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrowBlue" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0 0L14 7 0 14Z" fill="#087bbd"/>
+    </marker>
+    <marker id="arrowOrange" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0 0L14 7 0 14Z" fill="#e76f00"/>
+    </marker>
+    <style>
+      .title{font:700 34px Arial,sans-serif;fill:#12384a}.sub{font:500 18px Arial,sans-serif;fill:#426273}
+      .h{font:700 18px Arial,sans-serif;fill:#16394a}.t{font:500 15px Arial,sans-serif;fill:#294b5c}
+      .small{font:600 13px Arial,sans-serif;fill:#294b5c}.tiny{font:500 12px Arial,sans-serif;fill:#547080}
+      .stage{fill:#fff;stroke:#9bb3c0;stroke-width:2;filter:url(#shadow)}
+      .bottle{fill:url(#water);stroke:#587d90;stroke-width:3}.cap{fill:#256b91;stroke:#16475f;stroke-width:2}
+      .service{fill:none;stroke:#087bbd;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowBlue)}
+      .backwash{fill:none;stroke:#e76f00;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:14 10;marker-end:url(#arrowOrange)}
+      .signal{fill:none;stroke:#6d4aa8;stroke-width:3;stroke-dasharray:7 6}
+      .tag{fill:#fff;stroke:#adc1cc;stroke-width:1.5}.valve{fill:#343c43;stroke:#111b20;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="60" y="58" class="title">ProtoWave bottle prototype - equipment and sensor placement</text>
+  <text x="60" y="88" class="sub">Normal service flow descends left-to-right; backwash uses a separate elevated clean-water head.</text>
+
+  <g transform="translate(56 124)">
+    <rect width="192" height="196" rx="16" class="stage"/>
+    <text x="18" y="31" class="h">0  RAW RESERVOIR</text>
+    <text x="18" y="55" class="small">Highest water level</text>
+    <path d="M53 75h86v84q0 20-18 20H71q-18 0-18-20Z" class="bottle"/>
+    <rect x="76" y="64" width="40" height="18" rx="4" class="cap"/>
+    <text x="18" y="188" class="tiny">Vented 5 L food-grade bottle</text>
+  </g>
+
+  <g transform="translate(285 218)">
+    <rect width="210" height="250" rx="16" class="stage"/>
+    <text x="16" y="31" class="h">1  SOLIDS FILTER</text>
+    <text x="16" y="54" class="small">Gravel + quartz sand</text>
+    <path d="M60 78h90v126q0 24-18 24H78q-18 0-18-24Z" class="bottle"/>
+    <rect x="84" y="67" width="42" height="18" rx="4" class="cap"/>
+    <path d="M64 102h82v42H64Z" fill="#897961"/>
+    <path d="M64 144h82v65H64Z" fill="url(#sand)"/>
+    <path d="M64 203h82v10H64Z" fill="#dde4e7"/>
+    <text x="16" y="242" class="tiny">Washed media retained by nylon mesh</text>
+  </g>
+
+  <g transform="translate(535 330)">
+    <rect width="210" height="250" rx="16" class="stage"/>
+    <text x="16" y="31" class="h">2  pH CONDITIONING</text>
+    <text x="16" y="54" class="small">High-calcium limestone</text>
+    <path d="M60 78h90v126q0 24-18 24H78q-18 0-18-24Z" class="bottle"/>
+    <rect x="84" y="67" width="42" height="18" rx="4" class="cap"/>
+    <path d="M64 102h82v109H64Z" fill="url(#limestone)"/>
+    <text x="16" y="242" class="tiny">Bypass when raw pH is already neutral/alkaline</text>
+  </g>
+
+  <g transform="translate(785 442)">
+    <rect width="210" height="250" rx="16" class="stage"/>
+    <text x="16" y="31" class="h">3  METAL POLISH</text>
+    <text x="16" y="52" class="small">Zeolite cartridge</text>
+    <text x="16" y="70" class="small">+ separate biochar layer</text>
+    <path d="M60 78h90v126q0 24-18 24H78q-18 0-18-24Z" class="bottle"/>
+    <rect x="84" y="67" width="42" height="18" rx="4" class="cap"/>
+    <path d="M64 102h82v61H64Z" fill="url(#zeolite)"/>
+    <path d="M64 163h82v48H64Z" fill="#252d2d"/>
+    <text x="16" y="236" class="tiny">Replaceable cartridges;</text>
+    <text x="16" y="250" class="tiny">do not make one permanent mixed bed</text>
+  </g>
+
+  <g transform="translate(1035 554)">
+    <rect width="210" height="250" rx="16" class="stage"/>
+    <text x="16" y="31" class="h">4  FLUORIDE POLISH</text>
+    <text x="16" y="52" class="small">Activated alumina or</text>
+    <text x="16" y="70" class="small">validated Ca-modified biochar</text>
+    <path d="M60 78h90v126q0 24-18 24H78q-18 0-18-24Z" class="bottle"/>
+    <rect x="84" y="67" width="42" height="18" rx="4" class="cap"/>
+    <path d="M64 102h82v109H64Z" fill="url(#alumina)"/>
+    <text x="16" y="236" class="tiny">Final media choice requires</text>
+    <text x="16" y="250" class="tiny">source-water breakthrough testing</text>
+  </g>
+
+  <!-- Blue service-water connections: always descending. -->
+  <path d="M248 253H270v33h15" class="service"/>
+  <path d="M390 468v26h110v-96h35" class="service"/>
+  <path d="M640 580v28h110v-98h35" class="service"/>
+  <path d="M890 692v28h110v-98h35" class="service"/>
+
+  <!-- Feed isolation valve and raw sampling point. -->
+  <rect x="255" y="241" width="32" height="25" rx="5" class="valve"/>
+  <text x="250" y="230" class="small">V1 FEED</text>
+  <circle cx="270" cy="286" r="8" fill="#fff" stroke="#087bbd" stroke-width="3"/>
+  <text x="292" y="313" class="tiny">S0 raw sample</text>
+
+  <!-- Post-treatment sensing cell. -->
+  <g transform="translate(1265 650)">
+    <rect width="184" height="206" rx="16" class="stage"/>
+    <text x="13" y="29" class="h">5  SENSOR CELL</text>
+    <rect x="22" y="63" width="140" height="112" rx="18" fill="#152c39" stroke="#07171f" stroke-width="3"/>
+    <path d="M45 48v74" stroke="#61b7df" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="45" cy="131" r="8" fill="#d9f6ff"/>
+    <path d="M87 47v84" stroke="#20292d" stroke-width="11" stroke-linecap="round"/>
+    <path d="M129 47v84" stroke="#c8d5da" stroke-width="14" stroke-linecap="round"/>
+    <text x="31" y="190" class="small">pH</text><text x="72" y="190" class="small">TDS</text><text x="113" y="190" class="small">TURB.</text>
+  </g>
+  <path d="M1140 804v42h125" class="service"/>
+
+  <!-- Outlet equipment. -->
+  <g transform="translate(1265 884)">
+    <rect x="0" y="0" width="92" height="54" rx="12" fill="#fff" stroke="#7da4b7" stroke-width="2"/>
+    <circle cx="28" cy="27" r="18" fill="#eef4f7" stroke="#6e8e9c" stroke-width="2"/>
+    <path d="M28 11v32M12 27h32M17 16l22 22M39 16L17 38" stroke="#6e8e9c" stroke-width="2"/>
+    <text x="50" y="24" class="small">FLOW</text><text x="50" y="42" class="tiny">YF-S201*</text>
+  </g>
+  <path d="M1357 911h35" class="service"/>
+  <g transform="translate(1392 884)">
+    <rect width="122" height="54" rx="24" fill="#c7d0d4" stroke="#657680" stroke-width="3"/>
+    <text x="61" y="24" text-anchor="middle" class="small">UV-C</text>
+    <text x="61" y="42" text-anchor="middle" class="tiny">closed reactor</text>
+  </g>
+  <path d="M1514 911h34" class="service"/>
+  <rect x="1512" y="880" width="30" height="25" rx="5" class="valve"/>
+  <text x="1475" y="866" class="small">V2 NC TAP</text>
+  <path d="M1548 911h26v26" fill="none" stroke="#536b76" stroke-width="7" stroke-linecap="round"/>
+  <text x="1487" y="969" class="h">SAFE WATER</text>
+
+  <!-- Backwash tank and orange reverse-flow route. -->
+  <g transform="translate(1090 120)">
+    <rect width="220" height="190" rx="16" class="stage"/>
+    <text x="15" y="31" class="h">CLEAN BACKWASH TANK</text>
+    <text x="15" y="54" class="small">Above every filter outlet</text>
+    <path d="M65 72h92v77q0 20-18 20H83q-18 0-18-20Z" class="bottle"/>
+    <rect x="91" y="62" width="40" height="17" rx="4" class="cap"/>
+  </g>
+  <rect x="1119" y="322" width="34" height="26" rx="5" class="valve"/>
+  <text x="1160" y="342" class="small">V3 BACKWASH</text>
+  <path d="M1200 310v25h-63v200h45v359h-22v-90" class="backwash"/>
+  <path d="M1160 806h-82v-86h-83" class="backwash"/>
+  <path d="M995 720H828v-112h-83" class="backwash"/>
+  <path d="M745 608H578v-114h-83" class="backwash"/>
+  <path d="M495 494H328v-208h-43" class="backwash"/>
+  <path d="M285 286H200v272H91v132" class="backwash"/>
+  <rect x="135" y="548" width="34" height="26" rx="5" class="valve"/>
+  <text x="98" y="535" class="small">V4 WASTE</text>
+  <g transform="translate(35 690)">
+    <rect width="150" height="150" rx="16" class="stage"/>
+    <text x="14" y="31" class="h">WASTE BOTTLE</text>
+    <path d="M43 50h67v65q0 16-14 16H57q-14 0-14-16Z" fill="#ccb18b" stroke="#84623d" stroke-width="2"/>
+  </g>
+
+  <!-- Dry electrical enclosure and signal lines. -->
+  <g transform="translate(1325 125)">
+    <rect width="225" height="370" rx="18" fill="#273640" stroke="#0c171d" stroke-width="4" filter="url(#shadow)"/>
+    <rect x="18" y="20" width="189" height="330" rx="10" fill="#eef6f8" stroke="#90a8b4" stroke-width="2"/>
+    <text x="112" y="51" text-anchor="middle" class="h">DRY IP65 PANEL</text>
+    <rect x="40" y="72" width="145" height="67" rx="8" fill="#2676ad"/>
+    <text x="112" y="101" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="700">ARDUINO MEGA</text>
+    <text x="112" y="124" text-anchor="middle" fill="#dcefff" font-family="Arial" font-size="13">Serial1 to SIM800L</text>
+    <rect x="40" y="157" width="145" height="54" rx="7" fill="#3da2a0"/>
+    <text x="112" y="190" text-anchor="middle" fill="#fff" font-family="Arial" font-size="15" font-weight="700">4-CHANNEL RELAY</text>
+    <rect x="40" y="228" width="67" height="68" rx="7" fill="#df604c"/>
+    <text x="73" y="255" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13" font-weight="700">SIM800L</text>
+    <text x="73" y="276" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11">4.0 V / 2 A</text>
+    <rect x="118" y="228" width="67" height="68" rx="7" fill="#e4aa3b"/>
+    <text x="151" y="253" text-anchor="middle" fill="#283944" font-family="Arial" font-size="12" font-weight="700">VOLTAGE</text>
+    <text x="151" y="272" text-anchor="middle" fill="#283944" font-family="Arial" font-size="12" font-weight="700">SENSOR</text>
+    <text x="112" y="327" text-anchor="middle" class="tiny">Fuses + 12-to-5 V buck + cable glands</text>
+  </g>
+  <path d="M1440 495v105h-72v50" class="signal"/>
+  <text x="1265" y="575" class="tiny">Signals to Mega: A0 pH | A1 TDS | A2 turbidity</text>
+  <text x="1265" y="594" class="tiny">D2 flow pulse | A3 supply voltage</text>
+
+  <!-- Optional direct fluoride test cell; reagent never enters drinking water. -->
+  <g transform="translate(660 124)">
+    <rect width="390" height="120" rx="14" fill="#f8f3ff" stroke="#9d80c7" stroke-width="2"/>
+    <text x="15" y="26" class="h">OPTIONAL DIRECT FLUORIDE</text>
+    <text x="15" y="47" class="h">SIDE-STREAM TEST CELL</text>
+    <text x="15" y="70" class="t">Post-filter sample + TISAB + fluoride ISE</text>
+    <text x="15" y="91" class="t">0.1-20 mg/L target; sample drains to waste</text>
+    <text x="15" y="109" class="tiny">Warning 1.0; lock 1.4 mg/L. Never add TISAB to product water.</text>
+  </g>
+  <path d="M1050 184h75v370" class="signal"/>
+
+  <rect x="55" y="936" width="1120" height="45" rx="12" fill="#dcecf4"/>
+  <text x="73" y="965" class="small">*If bottle flow is below 1 L/min, YF-S201 is out of its specified range; substitute a calibrated 0.3-6 L/min sensor.</text>
+  <g transform="translate(1200 958)"><path d="M0 0h45" class="service"/><text x="58" y="7" class="small">service</text></g>
+  <g transform="translate(1355 958)"><path d="M0 0h45" class="backwash"/><text x="58" y="7" class="small">backwash</text></g>
+</svg>
