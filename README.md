@@ -6,7 +6,7 @@ gravity staircase, not a level row of bottles.
 
 ## Start here
 
-1. Read `report/ProtoWave_Arduino_Technical_Design.pdf`.
+1. Read `report/ProtoWave_Arduino_Technical_Design.pdf`. 
 2. Fabricate from `visuals/equipment-placement-schematic.svg`; the labelled
    photorealistic render is a presentation aid, not a piping drawing.
 3. For the exact latest component list, upload
