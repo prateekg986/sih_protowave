@@ -1,6 +1,6 @@
 # ProtoWave Arduino Mega design package
 
-This package converts the SIH26040 concept into a buildable, fail-closed
+This package contains SIH26040 concept into a buildable, fail-closed
 Arduino Mega prototype. The recommended physical arrangement is a descending
 gravity staircase, not a level row of bottles.
 
